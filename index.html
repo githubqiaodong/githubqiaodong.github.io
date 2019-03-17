@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+<head>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<style>
+/*css重置*/
+body,h1,p,dl,dd{margin:0;}
+ul{list-style-type:none;padding:0;margin:0;}
+a{text-decoration:none;color:black;}
+img{display:block;}/*无故空隙*/
+h1{font-weight:normal;font-size:1em;}
+/*公用*/
+li{float:left;}
+.clearfix{clear:both;}/*解决塌陷*/
+/*页头修饰*/
+.logo_box,.nav{float:left;}
+.phone{float:right;background-image:url(images/phone.png);background-repeat:no-repeat;padding-left:46px;background-position:left top;transition:.3s;}
+.phone:hover{background-position:left -50px;}
+.header{max-width:1200px;margin:0 auto;line-height:50px;background-color:aliceblue;padding:0 20px;}
+.nav a{display:block;padding:0 17px;transition:.3s;}
+.nav a:hover{background-color:dodgerblue;color:white;font-weight:bold;}
+.logo_box{margin-right:20px;padding-top:10px;}
+.mobile_menu{float:left;width:40px;margin-top:12px;display:none;}
+.mobile_menu span{display:block;height:2px;background-color:black;margin:5px 8px;}
+@media (max-width:940px){
+	.nav{display:none;}
+	.mobile_menu{display:block;}
+	.logo_box{position:absolute;left:calc(50% - 168px / 2);top:0;}
+}
+@media (max-width:640px){
+	.phone{display:none;}
+	.header{padding-bottom:12px;}
+}
+/*通栏广告修饰*/
+.banner_box{max-width:1200px;margin:0 auto;}
+.banner_box img{width:100%;}
+*{box-sizing:border-box;}/*内边框，内边距也会计算在内部*/
+.product_list{max-width:1200px;margin:0 auto;padding:50px 0;}
+.cols{width:calc((100% - 60px) / 4);float:left;margin-right:20px;}
+@media (max-width:1280px){
+	.product_list{padding:50px 20px;}
+}
+.product_list .cols:nth-child(4){margin-right:0;}
+.product2 .cols:nth-child(4){margin-right:20px;}
+.product2 .cols:nth-child(5){margin-right:0;}
+@media (max-width:1080px){
+	.cols{width:calc((100% - 20px) / 2);padding-bottom:20px;}
+	.product_list .cols:nth-child(2){margin-right:0;}
+	.product2 .cols:nth-child(2){margin-right:20px;}
+	.product2 .cols:nth-child(3){margin-right:0;}
+}
+.pic_box img{width:100%;}
+.cols h1{font-weight:bold;font-size:22px;margin-top:25px;}
+.cols p{font-size:14px;line-height:30px;margin-bottom:14px;}
+.cols a{font-size:14px;font-weight:bold;}
+.product_list_title{font-size:30px;font-weight:bold;line-height:60px;}
+/*关注*/
+.guanzhu{max-width:1200px;margin:0 auto;line-height:60px;}
+.guanzhu li{margin:0 10px;padding-top:18px;position:relative;}
+.guanzhu li:nth-child(1){padding-top:0;}
+.guanzhu li img:nth-child(2){position:absolute;left:-20px;display:none;}
+.guanzhu li:hover img{display:block;}
+/*页脚*/
+.footer_bg{background-color:#e8e8e8;}
+.footer{max-width:1200px;margin:0 auto;padding:40px 0;}
+.footer dl{float:left;width:calc(100% / 6);}
+@media (max-width:1280px){
+	.footer{padding:40px 20px;}
+	.footer dl{width:calc(100% / 3);margin-bottom:20px;}
+}
+@media (max-width:710px){
+	.footer dl{width:100%;}
+}
+.footer dt{font-weight:bold;line-height:30px;}
+.footer dd{line-height:28px;}
+.copyright{text-align:center;padding-top:30px;}
+</style>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+<!--页头-->
+<div class="header">
+	<div class="mobile_menu">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<div class="logo_box"><img src="images/logo.png"></div>
+	<ul class="nav">
+		<li><a href="">公司简介</a></li>
+		<li><a href="">经典案例</a></li>
+		<li><a href="">我们的客户</a></li>
+		<li><a href="">新闻资讯</a></li>
+		<li><a href="">联系我们</a></li>
+	</ul>
+	<div class="phone">电话 010-87456321</div>
+	<div class="clearfix"></div>
+</div>
+<!--广告-->
+<div class="banner_box">
+	<img src="images/banner.png">
+</div>
+<!--产品列表-->
+<div class="product_list">
+	<div class="cols"><!--列-->
+		<div class="pic_box"><img src="images/chanpin01.png"></div>
+		<h1>匠心，耀出众</h1>
+		<p>借助全新 Surface Laptop 2 突破传统</p>
+		<a href="">立即购买</a>
+	</div>
+	<div class="cols"><!--列-->
+		<div class="pic_box"><img src="images/chanpin02.png"></div>
+		<h1>匠心，耀出众</h1>
+		<p>借助全新 Surface Laptop 2 突破传统</p>
+		<a href="">立即购买</a>
+	</div>
+	<div class="cols"><!--列-->
+		<div class="pic_box"><img src="images/chanpin03.png"></div>
+		<h1>匠心，耀出众</h1>
+		<p>借助全新 Surface Laptop 2 突破传统</p>
+		<a href="">立即购买</a>
+	</div>
+	<div class="cols"><!--列-->
+		<div class="pic_box"><img src="images/chanpin04.png"></div>
+		<h1>匠心，耀出众</h1>
+		<p>借助全新 Surface Laptop 2 突破传统</p>
+		<a href="">立即购买</a>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<!--广告-->
+<div class="banner_box">
+	<img src="images/banner.png">
+</div>
+<!--产品列表-->
+<div class="product_list product2">
+	<div class="product_list_title">适用于工作地点</div>
+	<div class="cols"><!--列-->
+		<div class="pic_box"><img src="images/chanpin01.png"></div>
+		<h1>匠心，耀出众</h1>
+		<p>借助全新 Surface Laptop 2 突破传统</p>
+		<a href="">立即购买</a>
+	</div>
+	<div class="cols"><!--列-->
+		<div class="pic_box"><img src="images/chanpin02.png"></div>
+		<h1>匠心，耀出众</h1>
+		<p>借助全新 Surface Laptop 2 突破传统</p>
+		<a href="">立即购买</a>
+	</div>
+	<div class="cols"><!--列-->
+		<div class="pic_box"><img src="images/chanpin03.png"></div>
+		<h1>匠心，耀出众</h1>
+		<p>借助全新 Surface Laptop 2 突破传统</p>
+		<a href="">立即购买</a>
+	</div>
+	<div class="cols"><!--列-->
+		<div class="pic_box"><img src="images/chanpin04.png"></div>
+		<h1>匠心，耀出众</h1>
+		<p>借助全新 Surface Laptop 2 突破传统</p>
+		<a href="">立即购买</a>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<!--广告-->
+<div class="banner_box">
+	<img src="images/banner.png">
+</div>
+<!--关注我们-->
+<ul class="guanzhu">
+	<li>关注我们：</li>
+	<li><img src="images/icon1.png"></li>
+	<li>
+		<img src="images/icon1.png">
+		<img src="images/erweima.png">
+	</li>
+	<li><img src="images/icon1.png"></li>
+	<div class="clearfix"></div>
+</ul>
+<!--页脚模块-->
+<div class="footer_bg">
+	<div class="footer">
+		<dl>
+			<dt>新增内容</dt>
+			<dd><a href="">全新 Surface Pro6</a> </dd>
+			<dd><a href="">全新 Surface Laptop2</a> </dd>
+			<dd><a href="">全新 Surface Go</a> </dd>
+			<dd><a href="">全新 Surface Xbox One X</a> </dd>
+			<dd><a href="">全新 Surface Xbox One S</a> </dd>
+			<dd><a href="">全新 Window 10 应用程序</a> </dd>
+		</dl>
+		<dl>
+			<dt>新增内容</dt>
+			<dd><a href="">全新 Surface Pro6</a> </dd>
+			<dd><a href="">全新 Surface Laptop2</a> </dd>
+			<dd><a href="">全新 Surface Go</a> </dd>
+			<dd><a href="">全新 Surface Xbox One X</a> </dd>
+			<dd><a href="">全新 Surface Xbox One S</a> </dd>
+			<dd><a href="">全新 Window 10 应用程序</a> </dd>
+		</dl>
+		<dl>
+			<dt>新增内容</dt>
+			<dd><a href="">全新 Surface Pro6</a> </dd>
+			<dd><a href="">全新 Surface Laptop2</a> </dd>
+			<dd><a href="">全新 Surface Go</a> </dd>
+			<dd><a href="">全新 Surface Xbox One X</a> </dd>
+			<dd><a href="">全新 Surface Xbox One S</a> </dd>
+			<dd><a href="">全新 Window 10 应用程序</a> </dd>
+		</dl>
+		<dl>
+			<dt>新增内容</dt>
+			<dd><a href="">全新 Surface Pro6</a> </dd>
+			<dd><a href="">全新 Surface Laptop2</a> </dd>
+			<dd><a href="">全新 Surface Go</a> </dd>
+			<dd><a href="">全新 Surface Xbox One X</a> </dd>
+			<dd><a href="">全新 Surface Xbox One S</a> </dd>
+			<dd><a href="">全新 Window 10 应用程序</a> </dd>
+		</dl>
+		<dl>
+			<dt>新增内容</dt>
+			<dd><a href="">全新 Surface Pro6</a> </dd>
+			<dd><a href="">全新 Surface Laptop2</a> </dd>
+			<dd><a href="">全新 Surface Go</a> </dd>
+			<dd><a href="">全新 Surface Xbox One X</a> </dd>
+			<dd><a href="">全新 Surface Xbox One S</a> </dd>
+			<dd><a href="">全新 Window 10 应用程序</a> </dd>
+		</dl>
+		<dl>
+			<dt>新增内容</dt>
+			<dd><a href="">全新 Surface Pro6</a> </dd>
+			<dd><a href="">全新 Surface Laptop2</a> </dd>
+			<dd><a href="">全新 Surface Go</a> </dd>
+			<dd><a href="">全新 Surface Xbox One X</a> </dd>
+			<dd><a href="">全新 Surface Xbox One S</a> </dd>
+			<dd><a href="">全新 Window 10 应用程序</a> </dd>
+		</dl>
+		<div class="clearfix"></div>
+		<div class="copyright">COPYRIGHT &copy;  By  company name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;备案号：10000564782135</div>
+	</div>
+</div>
+</body>
+</html>
